@@ -1,0 +1,42 @@
+{
+  "name": "anauser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "babel-preset-latest": "npm:babel-preset-latest@^6.16.0",
+      "css": "github:systemjs/plugin-css@^0.1.32",
+      "lodash": "npm:lodash@^4.17.2",
+      "material-ui": "npm:material-ui@^0.16.5",
+      "mobx": "npm:mobx@^2.6.5",
+      "mobx-react": "npm:mobx-react@^4.0.3",
+      "react": "npm:react@^15.4.1",
+      "react-dom": "npm:react-dom@^15.4.1",
+      "react-fontawesome": "npm:react-fontawesome@^1.4.0",
+      "react-tap-event-plugin": "npm:react-tap-event-plugin@^2.0.1",
+      "socket.io": "npm:socket.io@^1.7.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0"
+    }
+  },
+  "devDependencies": {
+    "hapi": "^16.0.1"
+  },
+  "dependencies": {
+    "inert": "^4.0.3"
+  }
+}
