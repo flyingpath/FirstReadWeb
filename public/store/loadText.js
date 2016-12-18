@@ -9,7 +9,7 @@ var loadText = observable({
     dataAll: {},
     dataOld: {},
     dataNew: {},
-    lan: 'Chinese',
+    lan: 'Ch',
 })
 
 let loaddata = observe(loadList, (change)=>{
@@ -31,7 +31,6 @@ let loaddata = observe(loadList, (change)=>{
                 loadText.dataAll[lanList[lanIdx]] = backdata
                 loadText.dataOld[lanList[lanIdx]] = backdata.slice(0, 39)
                 loadText.dataNew[lanList[lanIdx]] = backdata.slice(39, 66)
-                console.log(mobx.toJS(loadText));
             })
         }
     }
@@ -41,6 +40,9 @@ let loaddata = observe(loadList, (change)=>{
 _.assign(loadText, {
     load: action(function(){
         loaddata()
+    }),
+    setLan: action((lanStr)=>{
+        this.lan = lanStr
     }),
 })
 
