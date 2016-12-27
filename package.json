@@ -21,6 +21,7 @@
       "mobx": "npm:mobx@^2.6.5",
       "mobx-react": "npm:mobx-react@^4.0.3",
       "react": "npm:react@^15.4.1",
+      "react-bootstrap": "npm:react-bootstrap@^0.30.7",
       "react-dom": "npm:react-dom@^15.4.1",
       "react-fontawesome": "npm:react-fontawesome@^1.4.0",
       "react-tap-event-plugin": "npm:react-tap-event-plugin@^2.0.1",

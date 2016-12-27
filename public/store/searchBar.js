@@ -43,6 +43,9 @@ const translate = (str) => {
                 })                
             })
             sentence=letterArray[1].replace(' ','')
+            searchBar.book = book
+            searchBar.chapter = chapter
+            searchBar.sentence = sentence
         }
     }
 }

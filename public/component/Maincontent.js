@@ -6,8 +6,10 @@ import '../css/font-awesome/css/font-awesome.min.css!'
 import ImgBook from 'material-ui/svg-icons/action/book'
 import IconButton from 'material-ui/IconButton'
 
+import SearchResult from './Searchresult'
 import loadText from '../store/loadText'
 import loadList from '../store/loadList'
+import searchBar from '../store/searchBar'
 
 class Maincontent extends React.Component {
     constructor(props) {
@@ -22,16 +24,20 @@ class Maincontent extends React.Component {
     }
 
     render() {
-        return ( 
-            <div id = "bible">
-                <IconButton style={{width:'',height:''}} iconStyle={{height:'120px', width:'100px'}}>
-                    <ImgBook />
-                </IconButton> 
-                <IconButton style={{width:'',height:''}} iconStyle={{height:'120px', width:'100px'}}>
-                    <ImgBook  />
-                </IconButton>
-            </div>
-        )
+        if(searchBar.value.length>0){
+            return <SearchResult />
+        }else{
+            return ( 
+                <div id = "bible">
+                    <IconButton style={{width:'',height:''}} iconStyle={{height:'120px', width:'100px'}}>
+                        <ImgBook />
+                    </IconButton> 
+                    <IconButton style={{width:'',height:''}} iconStyle={{height:'120px', width:'100px'}}>
+                        <ImgBook  />
+                    </IconButton>
+                </div>
+            )
+        }            
     }
 }
 

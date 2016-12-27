@@ -6,9 +6,11 @@ import _ from 'lodash'
 import TextField from 'material-ui/TextField'
 
 import searchBar from '../store/searchBar'
+import searchResult from '../store/searchResult'
 
 const setValue = (e) => {
     searchBar.setValue(e.target.value)
+    searchResult.search()
 }
 
 const Searctbar = () =>{

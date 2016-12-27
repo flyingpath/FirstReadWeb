@@ -70,7 +70,7 @@ const loaddata = ()=>{
         loadList.fullTitleOld = fullTitleOld
         loadList.fullTitleNew = fullTitleNew
         loadList.ready = true
-})
+    })  
 }
 
 _.assign(loadList, {

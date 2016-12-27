@@ -24,6 +24,7 @@ System.config({
     "mobx": "npm:mobx@2.6.5",
     "mobx-react": "npm:mobx-react@4.0.3",
     "react": "npm:react@15.4.1",
+    "react-bootstrap": "npm:react-bootstrap@0.30.7",
     "react-dom": "npm:react-dom@15.4.1",
     "react-fontawesome": "npm:react-fontawesome@1.4.0",
     "react-tap-event-plugin": "npm:react-tap-event-plugin@2.0.1",
@@ -813,6 +814,20 @@ System.config({
     "npm:react-addons-transition-group@15.4.1": {
       "react": "npm:react@15.4.1"
     },
+    "npm:react-bootstrap@0.30.7": {
+      "babel-runtime": "npm:babel-runtime@6.20.0",
+      "classnames": "npm:classnames@2.2.5",
+      "dom-helpers": "npm:dom-helpers@2.4.0",
+      "invariant": "npm:invariant@2.2.2",
+      "keycode": "npm:keycode@2.1.8",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.4.1",
+      "react-dom": "npm:react-dom@15.4.1",
+      "react-overlays": "npm:react-overlays@0.6.10",
+      "react-prop-types": "npm:react-prop-types@0.4.0",
+      "uncontrollable": "npm:uncontrollable@4.0.3",
+      "warning": "npm:warning@3.0.0"
+    },
     "npm:react-dom@15.4.1": {
       "fbjs": "npm:fbjs@0.8.6",
       "loose-envify": "npm:loose-envify@1.3.0",
@@ -827,6 +842,18 @@ System.config({
     },
     "npm:react-fontawesome@1.4.0": {
       "react": "npm:react@15.4.1"
+    },
+    "npm:react-overlays@0.6.10": {
+      "classnames": "npm:classnames@2.2.5",
+      "dom-helpers": "npm:dom-helpers@2.4.0",
+      "react": "npm:react@15.4.1",
+      "react-dom": "npm:react-dom@15.4.1",
+      "react-prop-types": "npm:react-prop-types@0.4.0",
+      "warning": "npm:warning@3.0.0"
+    },
+    "npm:react-prop-types@0.4.0": {
+      "react": "npm:react@15.4.1",
+      "warning": "npm:warning@3.0.0"
     },
     "npm:react-tap-event-plugin@2.0.1": {
       "fbjs": "npm:fbjs@0.8.6",
@@ -955,6 +982,11 @@ System.config({
     },
     "npm:ultron@1.0.2": {
       "events": "github:jspm/nodelibs-events@0.1.1"
+    },
+    "npm:uncontrollable@4.0.3": {
+      "invariant": "npm:invariant@2.2.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.4.1"
     },
     "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

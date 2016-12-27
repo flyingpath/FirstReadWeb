@@ -10,10 +10,12 @@ var loadText = observable({
     dataOld: {},
     dataNew: {},
     lan: 'Ch',
+    ready:false,
 })
 
 let loaddata = observe(loadList, (change)=>{
-    if(change.name == 'shortTitleOld' || change.name == 'shortTitleNew'){        
+    if(change.name == 'ready' && loadList.ready == true){        
+        loadText.ready = false
         const lanList = ['Ch', 'En']
         for(let lanIdx in lanList){
             let uriArray = [], 
@@ -31,6 +33,7 @@ let loaddata = observe(loadList, (change)=>{
                 loadText.dataAll[lanList[lanIdx]] = backdata
                 loadText.dataOld[lanList[lanIdx]] = backdata.slice(0, 39)
                 loadText.dataNew[lanList[lanIdx]] = backdata.slice(39, 66)
+                loadText.ready = true
             })
         }
     }
