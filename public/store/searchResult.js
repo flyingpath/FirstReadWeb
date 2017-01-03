@@ -61,7 +61,6 @@ const searchData = ()=>{
             sentence,
             textData.En[dicList[book]][chapter][sentence]
         ])
-        console.log(mobx.toJS(searchResult));
     }
 }
 
@@ -70,7 +69,11 @@ _.assign(searchResult, {
         loaddata()
     }),
     search: action(function(){
+        this.clearSearchResult()
         searchData()
+    }),
+    clearSearchResult: action(function(){
+        this.data= {Ch:[], En:[]}
     }),
 })
 

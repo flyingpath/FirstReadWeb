@@ -25,7 +25,7 @@ class Maincontent extends React.Component {
 
     render() {
         if(searchBar.value.length>0){
-            return <SearchResult />
+            return <SearchResult id = 'searchResult' />
         }else{
             return ( 
                 <div id = "bible">

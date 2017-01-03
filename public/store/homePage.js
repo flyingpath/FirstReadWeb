@@ -4,16 +4,16 @@ import mobx from 'mobx'
 import _ from 'lodash' 
 
 var homePage = observable({
-    lan: [],
+    lan: 'Ch',
 })
 
-const loaddata = ()=>{
-    
-}
-
 _.assign(homePage, {
-    load: action(function(){
-        loaddata()
+    toggleLan: action(function(){
+        if(this.lan == 'Ch'){
+            this.lan = 'En'
+        }else{
+            this.lan = 'Ch'
+        }
     }),
 })
 

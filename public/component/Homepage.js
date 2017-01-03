@@ -10,6 +10,7 @@ import IconButton from 'material-ui/IconButton'
 
 import loadText from '../store/loadText'
 import loadList from '../store/loadList'
+import homePage from '../store/homePage'
 
 import Maincontent from './Maincontent'
 import Searchbar from './Searchbar'
@@ -31,14 +32,18 @@ class Homepage extends React.Component {
             <div id = "main" >
             <div id = "title" >
                 <h1 > Bible </h1> 
-            </div>  
-            <div id = "lanToggle"> 
-                <div style = {{ width: '150px', margin:'0 auto'}}>
-                <Toggle label = "English / 中文"  defaultToggled = { true } /> 
+                <div id = "lanToggle"> 
+                    <div style = {{ width: '150px', margin:'0 auto'}}>
+                    <Toggle label = "English / 中文"  defaultToggled = { true } /> 
+                    </div>
                 </div>
-            </div> 
+            </div>  
+            <div id = "searchBar"> 
                 <Searchbar />
+            </div>
+            <div id = "mainContent">
                 <Maincontent />
+            </div>    
             </div>
         )
     }

@@ -23,11 +23,12 @@ const translate = (str) => {
 //---- 如果有 "數字:數字"，進行短章節處理 ------//    
     const shortAdjuge = /\d:\d/,
           numAdjuge = /\d/
-
+    
+    str = str.replace(/ /g,'')
     if(shortAdjuge.exec(str)){
         const letterArray = _.split(str, ':')
         if(letterArray.length==2){
-            const preLetter = letterArray[0].replace(' ','')
+            const preLetter = letterArray[0]
             for(let i=0; i<preLetter.length; i++){
                 if(numAdjuge.exec(str[i])){
                     chapter += preLetter[i]

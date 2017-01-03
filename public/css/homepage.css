@@ -2,28 +2,35 @@
     background-color: #f4f4f4;
     width:100%;
     height:100%;
+    display: flex;
+    flex-direction: column;
 }
 #title{
     border-bottom: 4px solid #4CAF50;
     text-align: center;
-    font-family: 'Palatino';
-    font-style: italic;
-    font-size: 120%;
-    color: #4CAF50;
 }
 #title h1{
     margin:0px;
-    padding:25px;
+    padding:15px;
+    font-family: 'Palatino';
+    font-style: italic;
+    font-size: 250%;
+    color: #4CAF50;
 }
 #lanToggle{
-    margin-top: 20px; 
     text-align: -webkit-center; 
+    width: 200px;
+    position: absolute; right:50px; top: 50px
 }
 #searchBar{
     text-align: center;
-    margin-top: 30px;
 }
 #bible{ 
     margin-top: 100px;
     text-align: center; 
+}
+#mainContent{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
